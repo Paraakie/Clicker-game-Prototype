@@ -1934,7 +1934,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 681583087}
         m_MethodName: UpdateWood
         m_Mode: 3
         m_Arguments:
