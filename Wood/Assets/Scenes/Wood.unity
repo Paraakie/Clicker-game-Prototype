@@ -697,7 +697,7 @@ GameObject:
   - component: {fileID: 495774330}
   - component: {fileID: 495774329}
   m_Layer: 5
-  m_Name: Click the Tree
+  m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -715,7 +715,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1613012950}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1723,9 +1723,9 @@ RectTransform:
   m_Children:
   - {fileID: 98863746}
   - {fileID: 725121783}
+  - {fileID: 495774328}
   - {fileID: 2125314441}
   - {fileID: 1861227757}
-  - {fileID: 495774328}
   - {fileID: 1476815294}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1845,7 +1845,7 @@ RectTransform:
   - {fileID: 2086210264}
   - {fileID: 732797823}
   m_Father: {fileID: 1613012950}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2358,7 +2358,7 @@ RectTransform:
   - {fileID: 2027252568}
   - {fileID: 1864333648}
   m_Father: {fileID: 1613012950}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
