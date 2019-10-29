@@ -231,7 +231,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 380, y: -275}
-  m_SizeDelta: {x: 160, y: 60}
+  m_SizeDelta: {x: 162, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &138672004
 MonoBehaviour:
@@ -1236,6 +1236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wood: {fileID: 616309372}
+  branch: {fileID: 1274222675}
 --- !u!1 &701781145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,7 +1326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 725121783}
   m_Layer: 5
-  m_Name: Text_Stats
+  m_Name: Displayed Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1692,6 +1693,7 @@ GameObject:
   - component: {fileID: 1274222676}
   - component: {fileID: 1274222678}
   - component: {fileID: 1274222677}
+  - component: {fileID: 1274222679}
   m_Layer: 5
   m_Name: Collect_Branch_Text
   m_TagString: Untagged
@@ -1751,9 +1753,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Collect branches
-
-    (+1 Wood)'
+  m_Text: "Collect branches \n(+1 $W)"
 --- !u!222 &1274222678
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1762,6 +1762,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274222675}
   m_CullTransparentMesh: 0
+--- !u!114 &1274222679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274222675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b151977d02a34b4469af79c9d98c04b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  branchText: {fileID: 1274222677}
 --- !u!1 &1419274939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2371,7 +2384,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'WpC = Wood per Click
+  m_Text: '$W = Wood
+
+    WpC = Wood per Click
 
     WpS = Wood per Second'
 --- !u!222 &1754238480
@@ -2457,7 +2472,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 380, y: -212}
-  m_SizeDelta: {x: 160, y: 60}
+  m_SizeDelta: {x: 162, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1864333649
 MonoBehaviour:
@@ -2504,13 +2519,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 681583087}
         m_MethodName: UpdateWood
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Branch
           m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -3066,7 +3081,7 @@ GameObject:
   - component: {fileID: 2027252571}
   - component: {fileID: 2027252570}
   m_Layer: 5
-  m_Name: TitleTasks
+  m_Name: TitleCollect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3090,7 +3105,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 380, y: -147}
-  m_SizeDelta: {x: 160, y: 60}
+  m_SizeDelta: {x: 162, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2027252570
 MonoBehaviour:
@@ -3142,7 +3157,7 @@ GameObject:
   - component: {fileID: 2086210266}
   - component: {fileID: 2086210265}
   m_Layer: 5
-  m_Name: Hire_9YearOlds
+  m_Name: Hire_Workers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3272,7 +3287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2125314441}
   m_Layer: 5
-  m_Name: TaskSection
+  m_Name: CollectSection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

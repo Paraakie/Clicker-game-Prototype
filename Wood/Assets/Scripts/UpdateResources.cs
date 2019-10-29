@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,21 +10,31 @@ public class UpdateResources : MonoBehaviour
     //create Update_WoodText script object
     Update_WoodText woodScript;
 
+    //GameObject for Branch
+    public GameObject branch;
+    //create BranchText script object
+    BranchText branchScript;
+
     
     private void Start()
     {
         //Use Gameobject to initialise empty script objects
         woodScript = wood.GetComponent<Update_WoodText>();
+
+        branchScript = branch.GetComponent<BranchText>();
     }
 
     /*
      * Update wood value based on (+/-)int
      */ 
-    public void UpdateWood(int woodChange)
+    public void UpdateWood(string collectMethod)
     {
 
         //Get current Wood Value
         int newWood = woodScript.GetWoodNum();
+
+        //Get woodChange
+        int woodChange = getWoodChange(collectMethod);
 
         //Calculate new Wood Value
         newWood = newWood + woodChange;
@@ -39,6 +50,18 @@ public class UpdateResources : MonoBehaviour
         woodScript.SetWoodNum(newWood);
     }
 
+    /*
+     * Find the correct Value that wood is changed by
+     * based on passed string
+     */
+    public int getWoodChange(string collectMethod)
+    {
+        if (collectMethod == "Branch" || collectMethod == "branch")
+        {
+            return branchScript.GetBranchPerSec();
+        }
 
-    
+
+        return Int32.Parse(collectMethod);
+    }
 }
