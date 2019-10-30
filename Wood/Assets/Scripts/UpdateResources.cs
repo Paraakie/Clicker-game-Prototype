@@ -56,6 +56,8 @@ public class UpdateResources : MonoBehaviour
      */
     public int getWoodChange(string collectMethod)
     {
+
+        // Change BranchPerSec
         if (collectMethod == "Branch" || collectMethod == "branch")
         {
             return branchScript.GetBranchPerSec();
