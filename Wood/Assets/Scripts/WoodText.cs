@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class Update_WoodText : MonoBehaviour
+public class WoodText : MonoBehaviour
 {
     private int woodNum = 0;
     public Text woodText;
@@ -13,14 +11,7 @@ public class Update_WoodText : MonoBehaviour
     {
         //Text Displayed
         woodText.text = "Wood: "+ GetWoodNum();
-
-        //Test function grants wood when pressing space
-        /*
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SetWoodNum(GetWoodNum() + 1);
-        }
-        */
+     
     }
 
     /*

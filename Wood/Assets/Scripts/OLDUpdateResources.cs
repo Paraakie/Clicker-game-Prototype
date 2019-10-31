@@ -8,7 +8,7 @@ public class UpdateResources : MonoBehaviour
     //GameObject for Wood
     public GameObject wood;
     //create Update_WoodText script object
-    Update_WoodText woodScript;
+    WoodText woodScript;
 
     //GameObject for Branch
     public GameObject branch;
@@ -19,7 +19,7 @@ public class UpdateResources : MonoBehaviour
     private void Start()
     {
         //Use Gameobject to initialise empty script objects
-        woodScript = wood.GetComponent<Update_WoodText>();
+        woodScript = wood.GetComponent<WoodText>();
 
         branchScript = branch.GetComponent<BranchText>();
     }
@@ -57,7 +57,7 @@ public class UpdateResources : MonoBehaviour
     public int getWoodChange(string collectMethod)
     {
 
-        // Change BranchPerSec
+        // Change BranchPerSec    
         if (collectMethod == "Branch" || collectMethod == "branch")
         {
             return branchScript.GetBranchPerSec();
