@@ -276,7 +276,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 681583087}
+      - m_Target: {fileID: 0}
         m_MethodName: UpdateWood
         m_Mode: 3
         m_Arguments:
@@ -605,6 +605,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380106889}
   m_CullTransparentMesh: 0
+--- !u!1 &396387557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 396387559}
+  - component: {fileID: 396387558}
+  m_Layer: 0
+  m_Name: WoodUpdateScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &396387558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396387557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98371dffcfd92bb4abfb2e1ca3739a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wood: {fileID: 616309372}
+--- !u!4 &396387559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396387557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 587.17456, y: 298.57935, z: -369.625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &400883331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,6 +1245,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 681583086}
+  - component: {fileID: 681583090}
+  - component: {fileID: 681583089}
+  - component: {fileID: 681583088}
   - component: {fileID: 681583087}
   m_Layer: 0
   m_Name: Game_Manager
@@ -1221,7 +1268,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &681583087
 MonoBehaviour:
@@ -1232,11 +1279,48 @@ MonoBehaviour:
   m_GameObject: {fileID: 681583085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9a6ebf5c1e46f94f8f0520d97ea4954, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cc023673013c5f4f88cb0b09130aa79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &681583088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681583085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1292fffc20e3bc2498bda6ef4f1827b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &681583089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681583085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56091043447da0247a4a8c15a5b8983a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  branch: {fileID: 1274222675}
+  woodUp: {fileID: 396387557}
+--- !u!114 &681583090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681583085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98371dffcfd92bb4abfb2e1ca3739a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wood: {fileID: 616309372}
-  branch: {fileID: 1274222675}
 --- !u!1 &701781145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,7 +1519,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 681583087}
+      - m_Target: {fileID: 0}
         m_MethodName: UpdateWood
         m_Mode: 3
         m_Arguments:
@@ -2517,8 +2601,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 681583087}
-        m_MethodName: UpdateWood
+      - m_Target: {fileID: 681583089}
+        m_MethodName: updateCollections
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2940,7 +3024,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 681583087}
+      - m_Target: {fileID: 0}
         m_MethodName: UpdateWood
         m_Mode: 3
         m_Arguments:

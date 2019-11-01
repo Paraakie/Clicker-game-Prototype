@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class WoodText : MonoBehaviour
 {
-    private int woodNum = 0;
+    private double woodNum = 0;
     public Text woodText;
 
     // Update is called once per frame
@@ -18,12 +18,12 @@ public class WoodText : MonoBehaviour
      * Getters and Setters 
      */ 
 
-    public int GetWoodNum()
+    public double GetWoodNum()
     {
         return woodNum;
     }
 
-    public void SetWoodNum(int newWoodNum)
+    public void SetWoodNum(double newWoodNum)
     {
         woodNum = newWoodNum;
     }
