@@ -1450,7 +1450,7 @@ GameObject:
   - component: {fileID: 732797825}
   - component: {fileID: 732797824}
   m_Layer: 5
-  m_Name: BuildHut_Num
+  m_Name: Ranger_Num
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1468,12 +1468,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1870955916}
-  m_Father: {fileID: 1861227757}
-  m_RootOrder: 2
+  m_Father: {fileID: 903600481}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 690, y: -212}
+  m_AnchoredPosition: {x: 227, y: 35.5}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &732797824
@@ -1608,6 +1608,43 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &903600480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903600481}
+  m_Layer: 5
+  m_Name: Hire_Ranger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &903600481
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903600480}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2086210264}
+  - {fileID: 732797823}
+  m_Father: {fileID: 1861227757}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &942545916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,6 +1735,7 @@ GameObject:
   - component: {fileID: 1255899066}
   - component: {fileID: 1255899068}
   - component: {fileID: 1255899067}
+  - component: {fileID: 1255899069}
   m_Layer: 5
   m_Name: Hire_RangerCost_Text
   m_TagString: Untagged
@@ -1766,6 +1804,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255899065}
   m_CullTransparentMesh: 0
+--- !u!114 &1255899069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255899065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02db49eb51aeda74cb6e28ca5382a481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangerCostText: {fileID: 1255899067}
 --- !u!1 &1274222675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,7 +2175,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Lumberjack
+  m_Text: 'Ranger
 
     (Find branches)'
 --- !u!222 &1562937238
@@ -2509,8 +2560,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2129461573}
-  - {fileID: 2086210264}
-  - {fileID: 732797823}
+  - {fileID: 903600481}
   m_Father: {fileID: 1613012950}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2663,7 +2713,7 @@ GameObject:
   - component: {fileID: 1870955918}
   - component: {fileID: 1870955917}
   m_Layer: 5
-  m_Name: Text_Hut
+  m_Name: Ranger_Num_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3241,7 +3291,7 @@ GameObject:
   - component: {fileID: 2086210266}
   - component: {fileID: 2086210265}
   m_Layer: 5
-  m_Name: Hire_Ranger
+  m_Name: Hire_Ranger_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3260,12 +3310,12 @@ RectTransform:
   m_Children:
   - {fileID: 1562937236}
   - {fileID: 1255899066}
-  m_Father: {fileID: 1861227757}
-  m_RootOrder: 1
+  m_Father: {fileID: 903600481}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 581, y: -212}
+  m_AnchoredPosition: {x: 118, y: 35.5}
   m_SizeDelta: {x: 160, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2086210265

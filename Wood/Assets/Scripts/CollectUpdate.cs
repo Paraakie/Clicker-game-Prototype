@@ -6,8 +6,9 @@ public class CollectUpdate : MonoBehaviour
 {
     /*
      * All Collect Objects
-     */ 
+     */
 
+    /* Branch */
     //GameObject for Branch
     public GameObject branch;
     //create BranchText script object
