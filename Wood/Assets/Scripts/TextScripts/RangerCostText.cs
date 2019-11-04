@@ -14,6 +14,8 @@ public class RangerCostText : MonoBehaviour
     {
         //Display Text
         rangerCostText.text = "-" + rangerCost + "Wood";
+
+
     }
 
     /*

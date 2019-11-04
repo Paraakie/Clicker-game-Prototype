@@ -13,13 +13,12 @@ public class RangerNumText : MonoBehaviour
 
     
 
-
-
-
     // Update is called once per frame
     void Update()
     {
+        //Display Text
         rangerNumText.text = rangerNum.ToString();
+        //Calculate Ranger Wood Output
         rangerWpS = rangerNum * rangerProductivity;
     }
 
