@@ -32,7 +32,7 @@ public class CollectUpdate : MonoBehaviour
 
     
 
-    public void updateCollections(string collectMethod)
+    public void updateCollectedWood(string collectMethod)
     {
         double woodChange = getWoodChange(collectMethod);
 
