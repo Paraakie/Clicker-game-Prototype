@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class HireUpdate : MonoBehaviour
 {
@@ -28,15 +29,32 @@ public class HireUpdate : MonoBehaviour
     
     void Update()
     {
-        // Update Automatic Wood Gain by Calling FUnction
+        // Update Automatic Wood Gain by Calling Function
+        private float nextActionTime = 0.0f;
+        public float period = 0.1f;
 
-        //Update Wood when Hiring (Wood Cost)
+        
+        if (Time.time > nextActionTime)
+        {
+            nextActionTime += period;
+            // execute block of code here
+        }
+        
 
-        //Update New Hiring Cost by calling function
+    //Update Wood when Hiring (Wood Cost)
+
+    //Update New Hiring Cost by calling function
+}
+
+    //Function that gets all WpS from all "Hire"NumText
+    public double calculateWpS()
+    {
+        // Note: Update this function as more Hired GameObjects added
+        double total = rangerNumScript.GetRangerWpS(); 
+
+        return total;
     }
 
-    //Function that gets WpS
-    //just get WpS from all "Hire"NumText
 
     //FUnction that calculates new Hiring Cost
 }
