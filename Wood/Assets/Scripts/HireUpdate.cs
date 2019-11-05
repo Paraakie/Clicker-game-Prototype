@@ -26,25 +26,26 @@ public class HireUpdate : MonoBehaviour
         rangerCostScript = rangerCost.GetComponent<RangerCostText>();
     }
 
-    
-    void Update()
-    {
-        // Update Automatic Wood Gain by Calling Function
-        private float nextActionTime = 0.0f;
-        public float period = 0.1f;
+    private float nextActionTime = 0.0f;
+    public float period = 0.1f;
 
+    void Update()
+    { 
+        // Update Automatic Wood Gain by Calling Function
+        
         
         if (Time.time > nextActionTime)
         {
             nextActionTime += period;
             // execute block of code here
         }
-        
+
+    }       
 
     //Update Wood when Hiring (Wood Cost)
 
     //Update New Hiring Cost by calling function
-}
+
 
     //Function that gets all WpS from all "Hire"NumText
     public double calculateWpS()
