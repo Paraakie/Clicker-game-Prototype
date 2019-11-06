@@ -7,7 +7,7 @@ public class RangerCostText : MonoBehaviour
      * Values
      */
     public Text rangerCostText;
-    private int rangerCost;
+    private double rangerCost;
 
     // Update is called once per frame
     void Update()
@@ -22,12 +22,12 @@ public class RangerCostText : MonoBehaviour
      * Getters and Setters
      */
      //RangerCost
-    public int GetRangerCost()
+    public double GetRangerCost()
     {
         return rangerCost;
     }
 
-    public void SetRangerCost(int value)
+    public void SetRangerCost(double value)
     {
         rangerCost = value;
     }

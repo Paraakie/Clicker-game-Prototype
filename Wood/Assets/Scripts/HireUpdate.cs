@@ -25,10 +25,13 @@ public class HireUpdate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Use Gameobject to initialise empty script objects
+        /* Use Gameobject to initialise empty script objects */
+
+        //Ranger
         rangerNumScript = rangerGain.GetComponent<RangerNumText>();
         rangerCostScript = rangerCost.GetComponent<RangerCostText>();
 
+        //Wood
         woodUpScript = woodUp.GetComponent<WoodUpdate>();
     }
 
@@ -36,7 +39,7 @@ public class HireUpdate : MonoBehaviour
     public float period = 1.0f; // period = 1 second
 
     void Update()
-    { 
+    {
         // Update Automatic Wood Gain by Calling Function
         if (Time.time > nextActionTime)
         {
@@ -45,22 +48,41 @@ public class HireUpdate : MonoBehaviour
             woodUpScript.UpdateWood(calculateWpS());
         }
 
-    }       
-
-    //Update Wood when Hiring (Wood Cost)
-
-    //Update New Hiring Cost by calling function
-
+    }
 
     //Function that gets all WpS from all "Hire"NumText
     public double calculateWpS()
     {
         // Note: Update this function as more Hired GameObjects added
-        double total = rangerNumScript.GetRangerWpS(); 
+        double total = rangerNumScript.GetRangerWpS();
 
         return total;
     }
 
+    //Function that updates a hire based on input
+    void Hiring(string hireMethod)
+    {
+        //Update Wood when Hiring (Wood Cost)
+        woodUpScript.UpdateWood(findHiringMethod(hireMethod));
+    }
 
-    //FUnction that calculates new Hiring Cost
+    //Function that finds hire method and hires
+    private double findHiringMethod(string hireM)
+    {
+        // Ranger
+        if (hireM == "Ranger" || hireM == "ranger")
+        {
+            //Update HireNum
+            rangerNumScript.SetRangerNum(rangerNumScript.GetRangerNum() + 1);
+
+            //Update New Hiring Cost
+            double currentRangerCost = rangerCostScript.GetRangerCost();
+            rangerCostScript.SetRangerCost(currentRangerCost * 1.5);
+
+            return currentRangerCost;
+        }
+
+        return 0;
+    }
+
 }
