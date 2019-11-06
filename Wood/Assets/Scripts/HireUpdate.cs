@@ -16,7 +16,11 @@ public class HireUpdate : MonoBehaviour
     RangerNumText rangerNumScript;
     RangerCostText rangerCostScript;
 
-
+    /*
+     * WoodUpdate Object Reference
+     */
+    public GameObject woodUp;
+    WoodUpdate woodUpScript;
 
     // Start is called before the first frame update
     void Start()
@@ -24,20 +28,21 @@ public class HireUpdate : MonoBehaviour
         //Use Gameobject to initialise empty script objects
         rangerNumScript = rangerGain.GetComponent<RangerNumText>();
         rangerCostScript = rangerCost.GetComponent<RangerCostText>();
+
+        woodUpScript = woodUp.GetComponent<WoodUpdate>();
     }
 
     private float nextActionTime = 0.0f;
-    public float period = 0.1f;
+    public float period = 1.0f; // period = 1 second
 
     void Update()
     { 
         // Update Automatic Wood Gain by Calling Function
-        
-        
         if (Time.time > nextActionTime)
         {
             nextActionTime += period;
-            // execute block of code here
+            // Adds WoodperSecond every Second
+            woodUpScript.UpdateWood(calculateWpS());
         }
 
     }       
