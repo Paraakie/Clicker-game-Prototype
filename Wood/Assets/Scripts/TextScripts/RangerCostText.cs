@@ -7,14 +7,14 @@ public class RangerCostText : MonoBehaviour
      * Values
      */
     public Text rangerCostText;
-    private double rangerCost;
+    private double rangerCost = -10;
 
     // Update is called once per frame
     void Update()
     {
         //Display Text
-        rangerCostText.text = "-" + rangerCost + "Wood";
-
+        /*Note, fix how many decimals are displayed*/
+        rangerCostText.text = rangerCost + " Wood";
 
     }
 

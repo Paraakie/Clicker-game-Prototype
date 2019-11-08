@@ -10,9 +10,9 @@ public class HireUpdate : MonoBehaviour
     
     /* Ranger */
     // Gameobject for rangers
-    public GameObject rangerGain;
-    public GameObject rangerCost;
-    // Script for rangerNumText and RangerCostText
+    public GameObject rangerGainOB;
+    public GameObject rangerCostOB;
+    // Script for rangerNumText and rangerCostText
     RangerNumText rangerNumScript;
     RangerCostText rangerCostScript;
 
@@ -28,8 +28,8 @@ public class HireUpdate : MonoBehaviour
         /* Use Gameobject to initialise empty script objects */
 
         //Ranger
-        rangerNumScript = rangerGain.GetComponent<RangerNumText>();
-        rangerCostScript = rangerCost.GetComponent<RangerCostText>();
+        rangerNumScript = rangerGainOB.GetComponent<RangerNumText>();
+        rangerCostScript = rangerCostOB.GetComponent<RangerCostText>();
 
         //Wood
         woodUpScript = woodUp.GetComponent<WoodUpdate>();
@@ -60,26 +60,31 @@ public class HireUpdate : MonoBehaviour
     }
 
     //Function that updates a hire based on input
-    void Hiring(string hireMethod)
+    public void Hiring(string hireMethod)
     {
+        
         //Update Wood when Hiring (Wood Cost)
         woodUpScript.UpdateWood(findHiringMethod(hireMethod));
+        
     }
 
     //Function that finds hire method and hires
-    private double findHiringMethod(string hireM)
+    public double findHiringMethod(string hireM)
     {
         // Ranger
         if (hireM == "Ranger" || hireM == "ranger")
         {
-            //Update HireNum
-            rangerNumScript.SetRangerNum(rangerNumScript.GetRangerNum() + 1);
+            double currentrangerCost = rangerCostScript.GetRangerCost();
+            if (woodUpScript.enoughWood(currentrangerCost))
+            {
+                //Update HireNum
+                rangerNumScript.SetRangerNum(rangerNumScript.GetRangerNum() + 1);
 
-            //Update New Hiring Cost
-            double currentRangerCost = rangerCostScript.GetRangerCost();
-            rangerCostScript.SetRangerCost(currentRangerCost * 1.5);
+                //Update New Hiring Cost
+                rangerCostScript.SetRangerCost(currentrangerCost * 1.05);
 
-            return currentRangerCost;
+                return currentrangerCost;
+            }                
         }
 
         return 0;

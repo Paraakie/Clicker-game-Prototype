@@ -42,4 +42,15 @@ public class WoodUpdate : MonoBehaviour
         //Set new Wood Value
         woodScript.SetWoodNum(newWood);
     }
+
+    // Simple function that determines if a
+    public bool enoughWood(double woodCost)
+    {
+        if (woodCost <= woodScript.GetWoodNum())
+        {
+            return true;
+        }
+
+        return false;
+    }
 }

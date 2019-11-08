@@ -1294,8 +1294,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1292fffc20e3bc2498bda6ef4f1827b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangerGain: {fileID: 1870955915}
-  rangerCost: {fileID: 1255899065}
+  rangerGainOB: {fileID: 1870955915}
+  rangerCostOB: {fileID: 1255899065}
+  woodUp: {fileID: 396387557}
+  period: 1
 --- !u!114 &681583089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3377,15 +3379,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 681583085}
-        m_MethodName: 
-        m_Mode: 3
+      - m_Target: {fileID: 681583088}
+        m_MethodName: Hiring
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Ranger
           m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
