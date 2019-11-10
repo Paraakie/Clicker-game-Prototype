@@ -35,7 +35,7 @@ public class WoodUpdate : MonoBehaviour
         // Prevent Negative Wood
         if (newWood < 0)
         {
-            Debug.Log("Error: Invalid wood value. Wood Value was not updated.");
+            Debug.Log("Error: Invalid wood value. Wood Value was not updated. WoodChange = " + woodChange);
             return;
         }
 
