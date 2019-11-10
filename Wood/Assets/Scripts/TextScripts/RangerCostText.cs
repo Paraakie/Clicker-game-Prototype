@@ -7,7 +7,7 @@ public class RangerCostText : MonoBehaviour
      * Values
      */
     public Text rangerCostText;
-    private double rangerCost = -10;
+    private double rangerCost = -10.0;
 
     // Update is called once per frame
     void Update()

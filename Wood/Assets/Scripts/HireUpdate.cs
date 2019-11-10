@@ -75,7 +75,7 @@ public class HireUpdate : MonoBehaviour
         if (hireM == "Ranger" || hireM == "ranger")
         {
             double currentrangerCost = rangerCostScript.GetRangerCost();
-            if (woodUpScript.enoughWood(currentrangerCost))
+            if (woodUpScript.enoughWood(currentrangerCost*-1))
             {
                 //Update HireNum
                 rangerNumScript.SetRangerNum(rangerNumScript.GetRangerNum() + 1);
