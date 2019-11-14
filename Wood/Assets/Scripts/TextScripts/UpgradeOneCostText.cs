@@ -9,16 +9,23 @@ public class UpgradeOneCostText : MonoBehaviour
 
     private int upgradeOneCost = -100;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
         upgradeOneCostText.text = upgradeOneCost.ToString();
     }
+
+    /*
+     * Getters and Setters 
+     */
+    public int GetUpgradeOneCost()
+    {
+        return upgradeOneCost;
+    }
+
+    public void SetUpgradeOneCost(int value)
+    {
+        upgradeOneCost = value;
+    }
+
 }
