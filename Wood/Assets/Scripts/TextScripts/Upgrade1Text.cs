@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class UpgradeOneText : MonoBehaviour
+public class Upgrade1Text : MonoBehaviour
 {
+    public Text upgrade1Text;
+
+
     // Start is called before the first frame update
     void Start()
     {

@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UpgradeOneCostText : MonoBehaviour
+public class Upgrade1CostText : MonoBehaviour
 {
-    public Text upgradeOneCostText;
+    public Text upgrade1CostText;
 
-    private int upgradeOneCost = -100;
+    private int upgrade1Cost = -100;
 
     // Update is called once per frame
     void Update()
     {
-        upgradeOneCostText.text = upgradeOneCost.ToString();
+        upgrade1CostText.text = upgrade1Cost.ToString();
     }
 
     /*
@@ -20,12 +20,12 @@ public class UpgradeOneCostText : MonoBehaviour
      */
     public int GetUpgradeOneCost()
     {
-        return upgradeOneCost;
+        return upgrade1Cost;
     }
 
     public void SetUpgradeOneCost(int value)
     {
-        upgradeOneCost = value;
+        upgrade1Cost = value;
     }
 
 }
