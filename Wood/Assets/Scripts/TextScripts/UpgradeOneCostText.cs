@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class UpgradeOneCostText : MonoBehaviour
 {
-    Text upgradeOneCostText;
+    public Text upgradeOneCostText;
 
-    int upgradeOneCost = -100;
+    private int upgradeOneCost = -100;
 
 
     // Start is called before the first frame update
