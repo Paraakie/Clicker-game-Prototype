@@ -6,7 +6,9 @@ public class UpgradeUpdate : MonoBehaviour
 
     /*
      * UnityCost Script Object Reference
-     */ 
+     */
+    public Upgrade1CostText upgrade1Cost;
+    Upgrade1CostText upgrade1CostScript;
 
     /*  
     * WoodUpdate Object Reference
@@ -19,6 +21,8 @@ public class UpgradeUpdate : MonoBehaviour
     {
         //Use Gameobject to initialise empty script objects
         woodScript = wood.GetComponent<WoodText>();
+
+        upgrade1CostScript = upgrade1Cost.GetComponent<Upgrade1CostText>();
     }
 
     // Update is called once per frame
