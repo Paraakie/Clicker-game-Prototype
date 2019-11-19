@@ -3,6 +3,11 @@ using UnityEngine.UI;
 
 public class UpgradeUpdate : MonoBehaviour
 {
+
+    /*
+     * UnityCost Script Object Reference
+     */ 
+
     /*  
     * WoodUpdate Object Reference
     */
