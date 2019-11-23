@@ -7,7 +7,16 @@ public class Upgrade1CostText : MonoBehaviour
 {
     public Text upgrade1CostText;
 
-    private int upgrade1Cost = -100;
+    private int[] upgrade1Cost = new[] {
+        -100,
+        -500
+    };
+
+    private bool[] upgradePurchased = new[]
+    {
+        false,
+        false
+    };
 
     // Update is called once per frame
     void Update()
@@ -18,14 +27,14 @@ public class Upgrade1CostText : MonoBehaviour
     /*
      * Getters and Setters 
      */
-    public int GetUpgradeOneCost()
+    public int[] GetUpgradeOneCost()
     {
         return upgrade1Cost;
     }
 
-    public void SetUpgradeOneCost(int value)
+    public void SetUpgradeOneCost(int value, int position)
     {
-        upgrade1Cost = value;
+        upgrade1Cost[position] = value;
     }
 
 }
