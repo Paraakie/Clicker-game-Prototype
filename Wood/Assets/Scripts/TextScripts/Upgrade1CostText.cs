@@ -18,6 +18,8 @@ public class Upgrade1CostText : MonoBehaviour
         false
     };
 
+    
+
     // Update is called once per frame
     void Update()
     {
@@ -27,14 +29,27 @@ public class Upgrade1CostText : MonoBehaviour
     /*
      * Getters and Setters 
      */
+
+    //upgrade1Cost
     public int[] GetUpgradeOneCost()
     {
         return upgrade1Cost;
     }
 
-    public void SetUpgradeOneCost(int value, int position)
+    public void SetUpgradeOneCost(int[] value)
     {
-        upgrade1Cost[position] = value;
+        upgrade1Cost = value;
+    }
+
+    //upgradePurchased
+    public bool[] GetUpgradePurchased()
+    {
+        return upgradePurchased;
+    }
+
+    public void SetUpgradePurchased(bool[] value)
+    {
+        upgradePurchased = value;
     }
 
 }

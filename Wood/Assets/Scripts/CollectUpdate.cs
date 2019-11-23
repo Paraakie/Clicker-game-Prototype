@@ -31,12 +31,14 @@ public class CollectUpdate : MonoBehaviour
     }
 
     
-
+    /*
+     * Get called when collect-buttons are pressed
+     */
     public void updateCollectedWood(string collectMethod)
     {
-        double woodChange = getWoodChange(collectMethod);
 
-        woodUpScript.UpdateWood(woodChange);
+       woodUpScript.UpdateWood(getWoodChange(collectMethod));
+
     }
 
 
