@@ -29,9 +29,10 @@ public class UpgradeUpdate : MonoBehaviour
     // Update is called once per frame
     public void updateUpgrades(string upgradeNum)
     {
+        double woodChange = 0.0;
         // 1. Checking boolarray, and getting right index
         //2. use index and upgradeNum to get WoodChange
-        double woodChange = 0;
+
 
         //1. Update wood 
         woodUpScript.UpdateWood(woodChange);
