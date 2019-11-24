@@ -38,7 +38,7 @@ public class UpgradeUpdate : MonoBehaviour
         //1. Update wood 
         woodUpScript.UpdateWood(woodChange);
         //2. update bool-array
-        upgrade1CostScript.SetUpgradePurchased[false, upgradeIndex];
+        upgrade1CostScript.SetUpgradePurchased(false, upgradeIndex);
 
 
     }
