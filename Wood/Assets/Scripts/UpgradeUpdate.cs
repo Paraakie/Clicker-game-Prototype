@@ -31,12 +31,15 @@ public class UpgradeUpdate : MonoBehaviour
     {
         double woodChange = 0.0;
         // 1. Checking boolarray, and getting right index
+        int upgradeIndex = 0;
         //2. use index and upgradeNum to get WoodChange
 
 
         //1. Update wood 
         woodUpScript.UpdateWood(woodChange);
         //2. update bool-array
+        upgrade1CostScript.SetUpgradePurchased[false, upgradeIndex];
+
 
     }
 }

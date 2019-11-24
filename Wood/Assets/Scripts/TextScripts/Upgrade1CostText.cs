@@ -47,9 +47,9 @@ public class Upgrade1CostText : MonoBehaviour
         return upgradePurchased;
     }
 
-    public void SetUpgradePurchased(bool[] value)
+    public void SetUpgradePurchased(bool value, int index)
     {
-        upgradePurchased = value;
+        upgradePurchased[index] = value;
     }
 
 }
