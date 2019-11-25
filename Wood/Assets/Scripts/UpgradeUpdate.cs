@@ -32,13 +32,26 @@ public class UpgradeUpdate : MonoBehaviour
         
         // 1. Checking boolarray, and getting right index
         int upgradeIndex = get1stFalseIndex(upgrade1CostScript.GetUpgradePurchased());
+
+        if (upgradeIndex <= -1)
+        {
+            Debug.Log("Error: Invalid upgradeIndex.\n");
+            return;
+        }
+
         //2. use index and upgradeNum to get WoodChange
         int woodChange = upgrade1CostScript.GetUpgradeOneCost(upgradeIndex);
 
         //3. Update wood 
         woodUpScript.UpdateWood(woodChange);
-        //4. update bool-array
-        upgrade1CostScript.SetUpgradePurchased(true, upgradeIndex);
+
+        //Use to stop step 4
+        if (woodUpScript.enoughWood(woodChange*-1)){
+            //4. update bool-array
+            upgrade1CostScript.SetUpgradePurchased(true, upgradeIndex);
+        }
+
+        
 
 
     }

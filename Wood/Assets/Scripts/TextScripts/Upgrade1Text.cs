@@ -7,7 +7,7 @@ public class Upgrade1Text : MonoBehaviour
 {
     public Text upgrade1Text;
     private string[] upgrades = new[] {
-        "Gain +5 Wood when clicking Branches",
+        "Gain +5 WpC(Branches)",
         "Gain +10 Wood per Ranger"
     }; 
 

@@ -23,7 +23,8 @@ public class Upgrade1CostText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        upgrade1CostText.text = upgrade1Cost.ToString();
+        int newestUpgrade = 0;
+        upgrade1CostText.text = upgrade1Cost[newestUpgrade].ToString() + " Wood";
     }
 
     /*
