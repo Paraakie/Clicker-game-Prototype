@@ -29,17 +29,35 @@ public class UpgradeUpdate : MonoBehaviour
     // Update is called once per frame
     public void updateUpgrades(string upgradeNum)
     {
-        double woodChange = 0.0;
+        
         // 1. Checking boolarray, and getting right index
-        int upgradeIndex = 0;
+        int upgradeIndex = get1stFalseIndex(upgrade1CostScript.GetUpgradePurchased());
         //2. use index and upgradeNum to get WoodChange
+        int woodChange = upgrade1CostScript.GetUpgradeOneCost(upgradeIndex);
 
-
-        //1. Update wood 
+        //3. Update wood 
         woodUpScript.UpdateWood(woodChange);
-        //2. update bool-array
-        upgrade1CostScript.SetUpgradePurchased(false, upgradeIndex);
+        //4. update bool-array
+        upgrade1CostScript.SetUpgradePurchased(true, upgradeIndex);
 
 
     }
+
+    // Takes bool array and finds first false entry
+    public int get1stFalseIndex(bool[] boolArray)
+    {
+        for(int i = 0; i < boolArray.Length; i++)
+        {
+            if (boolArray[i] == false)
+            {
+                //return correct index
+                return i;
+            }
+        }
+
+
+        return -1; //return -1 if no entry with "false" is found
+    }
+
+
 }

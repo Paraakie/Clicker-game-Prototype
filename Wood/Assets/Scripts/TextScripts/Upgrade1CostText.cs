@@ -31,9 +31,9 @@ public class Upgrade1CostText : MonoBehaviour
      */
 
     //upgrade1Cost
-    public int[] GetUpgradeOneCost()
+    public int GetUpgradeOneCost(int index)
     {
-        return upgrade1Cost;
+        return upgrade1Cost[index];
     }
 
     public void SetUpgradeOneCost(int[] value)
