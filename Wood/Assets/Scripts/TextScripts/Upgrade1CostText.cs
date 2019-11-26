@@ -7,11 +7,13 @@ public class Upgrade1CostText : MonoBehaviour
 {
     public Text upgrade1CostText;
 
+    //Upgrade-COST Array
     private int[] upgrade1Cost = new[] {
         -100,
         -500
     };
 
+    //Upgrade-PURCHASED Array
     private bool[] upgradePurchased = new[]
     {
         false,
@@ -20,13 +22,19 @@ public class Upgrade1CostText : MonoBehaviour
 
     
 
+
+
     // Update is called once per frame
     void Update()
     {
-        int newestUpgrade = get1stFalseIndex(upgradePurchased); 
-
-
+        // Get value of newest unpurchased upgrade in Array
+        int newestUpgrade = get1stFalseIndex(upgradePurchased);
+        
+        // Update upgrade1Cost Text
         upgrade1CostText.text = upgrade1Cost[newestUpgrade].ToString() + " Wood";
+
+        //Update upgarde1 Text
+
     }
 
 

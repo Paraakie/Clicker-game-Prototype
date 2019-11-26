@@ -3,9 +3,20 @@ using UnityEngine.UI;
 
 public class UpgradeUpdate : MonoBehaviour
 {
+    //Upgrade-TEXT Array
+    private string[] upgradeText = new[] {
+        "Gain +5 WpC(Branches)",
+        "Gain +10 Wood per Ranger"
+    };
+
 
     /*
-     * UnityCost Script Object Reference
+     * UpgradeText Script Object Reference
+     */
+
+
+    /*
+     * UpgradeCost Script Object Reference
      */
     public Upgrade1CostText upgrade1Cost;
     Upgrade1CostText upgrade1CostScript;
@@ -17,13 +28,18 @@ public class UpgradeUpdate : MonoBehaviour
     WoodUpdate woodUpScript;
 
 
+    
+
+
     // Start is called before the first frame update
     void Start()
     {
         //Use Gameobject to initialise empty script objects
-        woodUpScript = woodUp.GetComponent<WoodUpdate>();
+        
 
         upgrade1CostScript = upgrade1Cost.GetComponent<Upgrade1CostText>();
+
+        woodUpScript = woodUp.GetComponent<WoodUpdate>();
     }
 
     // Update is called once per frame
