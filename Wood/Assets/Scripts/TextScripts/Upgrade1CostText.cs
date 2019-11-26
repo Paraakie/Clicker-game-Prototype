@@ -23,10 +23,27 @@ public class Upgrade1CostText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int newestUpgrade = 0; //implement function that updates this value
+        int newestUpgrade = get1stFalseIndex(upgradePurchased); 
 
 
         upgrade1CostText.text = upgrade1Cost[newestUpgrade].ToString() + " Wood";
+    }
+
+
+    // Takes bool array and finds first false entry
+    public int get1stFalseIndex(bool[] boolArray)
+    {
+        for (int i = 0; i < boolArray.Length; i++)
+        {
+            if (boolArray[i] == false)
+            {
+                //return correct index
+                return i;
+            }
+        }
+
+
+        return -1; // if no entry with "false" is found
     }
 
     /*

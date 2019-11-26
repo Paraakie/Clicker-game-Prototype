@@ -31,7 +31,7 @@ public class UpgradeUpdate : MonoBehaviour
     {
         
         // 1. Checking boolarray, and getting right index
-        int upgradeIndex = get1stFalseIndex(upgrade1CostScript.GetUpgradePurchased());
+        int upgradeIndex = upgrade1CostScript.get1stFalseIndex(upgrade1CostScript.GetUpgradePurchased());
 
         if (upgradeIndex <= -1)
         {
@@ -42,11 +42,11 @@ public class UpgradeUpdate : MonoBehaviour
         //2. use index and upgradeNum to get WoodChange
         int woodChange = upgrade1CostScript.GetUpgradeOneCost(upgradeIndex);
 
-        //3. Update wood 
-        woodUpScript.UpdateWood(woodChange);
-
-        //Use to stop step 4
+        //Check if purchase can be completed based on Wood Value
         if (woodUpScript.enoughWood(woodChange*-1)){
+            //3. Update wood 
+            woodUpScript.UpdateWood(woodChange);
+
             //4. update bool-array
             upgrade1CostScript.SetUpgradePurchased(true, upgradeIndex);
         }
@@ -56,21 +56,6 @@ public class UpgradeUpdate : MonoBehaviour
 
     }
 
-    // Takes bool array and finds first false entry
-    public int get1stFalseIndex(bool[] boolArray)
-    {
-        for(int i = 0; i < boolArray.Length; i++)
-        {
-            if (boolArray[i] == false)
-            {
-                //return correct index
-                return i;
-            }
-        }
-
-
-        return -1; //return -1 if no entry with "false" is found
-    }
 
 
 }
