@@ -10,7 +10,7 @@ public class WoodText : MonoBehaviour
     void Update()
     {
         //Text Displayed
-        woodText.text = "Wood: "+ GetWoodNum();
+        woodText.text = "Wood: "+ GetWoodNum().ToString("0.00");
      
     }
 

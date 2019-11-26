@@ -14,7 +14,7 @@ public class RangerCostText : MonoBehaviour
     {
         //Display Text
         /*Note, fix how many decimals are displayed*/
-        rangerCostText.text = rangerCost + " Wood";
+        rangerCostText.text = rangerCost.ToString("0.00") + " Wood";
 
     }
 
