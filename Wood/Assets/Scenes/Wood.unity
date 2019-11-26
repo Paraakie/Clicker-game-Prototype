@@ -1296,8 +1296,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc023673013c5f4f88cb0b09130aa79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upgrade1Text: {fileID: 361459889}
   upgrade1Cost: {fileID: 942545920}
+  branch: {fileID: 1274222675}
+  rangerGainOB: {fileID: 1870955915}
   woodUp: {fileID: 396387557}
+  upgradeIndex: 0
 --- !u!114 &681583088
 MonoBehaviour:
   m_ObjectHideFlags: 0
