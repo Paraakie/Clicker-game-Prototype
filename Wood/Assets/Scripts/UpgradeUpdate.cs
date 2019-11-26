@@ -9,6 +9,7 @@ public class UpgradeUpdate : MonoBehaviour
         "Gain +10 Wood per Ranger"
     };
 
+    /* Script References */
 
     /*
      * UpgradeText Script Object Reference
@@ -22,6 +23,18 @@ public class UpgradeUpdate : MonoBehaviour
     public Upgrade1CostText upgrade1Cost;
     Upgrade1CostText upgrade1CostScript;
 
+    /* 
+     * BranchText Script Object Reference
+     */
+    public GameObject branch;
+    BranchText branchScript;
+
+    /* 
+     * RangerNumText Script Object Reference 
+     */
+    public GameObject rangerGainOB;
+    RangerNumText rangerNumScript;
+
     /*
      * WoodUpdate Object Reference
      */
@@ -34,14 +47,18 @@ public class UpgradeUpdate : MonoBehaviour
     {
         //Use Gameobject to initialise empty script objects
         upgrade1TextScript = upgrade1Text.GetComponent<Upgrade1Text>();
-
         upgrade1CostScript = upgrade1Cost.GetComponent<Upgrade1CostText>();
+
+        branchScript = branch.GetComponent<BranchText>();
+        rangerNumScript = rangerGainOB.GetComponent<RangerNumText>();
 
         woodUpScript = woodUp.GetComponent<WoodUpdate>();
     }
 
     // Keeps track of the newest unpurchased Upgrade
     public int upgradeIndex = 0;
+
+    
 
     // Update is called once per frame
     void Update()
@@ -60,7 +77,7 @@ public class UpgradeUpdate : MonoBehaviour
          */
 
         //Always Update UpgradeText
-        upgrade1TextScript.SetUpgradeString(upgradeText[upgradeIndex]);
+        upgrade1TextScript.SetUpgradeString(GetUpgradeText()[upgradeIndex]);
 
         /* 
          * Later Changes
@@ -90,12 +107,32 @@ public class UpgradeUpdate : MonoBehaviour
         }
 
     }
-
+    /*
+     * Applies bought buttons effect
+     */
     public void applyUpgrade()
     {
-
+        if(upgradeIndex == 0)
+        {
+            branchScript.SetBranch_WpClick(branchScript.GetBranch_WpClick() + 5);
+        }
+        else if (upgradeIndex == 1)
+        {
+            rangerNumScript.SetRangerProductivity(rangerNumScript.GetRangerProductivity() + 10);
+        }
     }
 
+    /*
+     * Getters and Setters
+     */
+    public string[] GetUpgradeText()
+    {
+        return upgradeText;
+    }
 
+    public void SetUpgradeText(string[] value)
+    {
+        upgradeText = value;
+    }
 
 }
