@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 138672005}
   - component: {fileID: 138672004}
   m_Layer: 5
-  m_Name: Collect_Tree
+  m_Name: Collect_Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,7 +230,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -275}
+  m_AnchoredPosition: {x: 380, y: -169}
   m_SizeDelta: {x: 162, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &138672004
@@ -254,10 +254,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.7568628, g: 0.62352943, b: 0.14901961, a: 1}
-    m_HighlightedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
+    m_HighlightedColor: {r: 0.75686276, g: 0.62352943, b: 0.14901961, a: 1}
     m_PressedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
-    m_SelectedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
-    m_DisabledColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 0.5019608}
+    m_SelectedColor: {r: 0.75686276, g: 0.62352943, b: 0.14901961, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1.74
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -724,10 +724,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.7568628, g: 0.62352943, b: 0.14901961, a: 1}
-    m_HighlightedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
+    m_HighlightedColor: {r: 0.75686276, g: 0.62352943, b: 0.14901961, a: 1}
     m_PressedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
-    m_SelectedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
-    m_DisabledColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 0.5019608}
+    m_SelectedColor: {r: 0.75686276, g: 0.62352943, b: 0.14901961, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1.74
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1007,7 +1007,7 @@ GameObject:
   - component: {fileID: 507022642}
   - component: {fileID: 507022641}
   m_Layer: 5
-  m_Name: Text_Hut
+  m_Name: Test_Num_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1357,7 +1357,7 @@ GameObject:
   - component: {fileID: 701781148}
   - component: {fileID: 701781147}
   m_Layer: 5
-  m_Name: Hire_LumberjackCost_Text
+  m_Name: Hire_Test_Cost_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1415,7 +1415,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- ??? Wood'
+  m_Text: 'Cost: ??? Wood'
 --- !u!222 &701781148
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1629,7 +1629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -169}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &903600480
@@ -1740,7 +1740,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: -100 Wood
+  m_Text: 'Cost: 100 Wood'
 --- !u!222 &942545919
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1833,7 +1833,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: -10 Wood
+  m_Text: 'Cost: 10 Wood'
 --- !u!222 &1255899068
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2076,7 +2076,7 @@ GameObject:
   - component: {fileID: 1559861432}
   - component: {fileID: 1559861431}
   m_Layer: 5
-  m_Name: Collect_Tree_Text
+  m_Name: Collect_Test_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2420,7 +2420,7 @@ GameObject:
   - component: {fileID: 1680988720}
   - component: {fileID: 1680988719}
   m_Layer: 5
-  m_Name: Hire_Lumberjack_Text
+  m_Name: Hire_Test_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2667,10 +2667,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.7568628, g: 0.62352943, b: 0.14901961, a: 1}
-    m_HighlightedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
+    m_HighlightedColor: {r: 0.75686276, g: 0.62352943, b: 0.14901961, a: 1}
     m_PressedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
-    m_SelectedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
-    m_DisabledColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 0.5019608}
+    m_SelectedColor: {r: 0.75686276, g: 0.62352943, b: 0.14901961, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1.74
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2844,7 +2844,7 @@ GameObject:
   - component: {fileID: 1872559496}
   - component: {fileID: 1872559495}
   m_Layer: 5
-  m_Name: UpgradePlayer_Cost_Text
+  m_Name: UpgradeTest_Cost_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2902,7 +2902,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- ??? Wood'
+  m_Text: 'Cost: ??? Wood'
 --- !u!222 &1872559496
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2924,7 +2924,7 @@ GameObject:
   - component: {fileID: 1928063225}
   - component: {fileID: 1928063224}
   m_Layer: 5
-  m_Name: UpgradeTree
+  m_Name: UpgradeTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2948,7 +2948,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 880, y: -275}
+  m_AnchoredPosition: {x: 880, y: -169}
   m_SizeDelta: {x: 160, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1928063224
@@ -2972,10 +2972,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.7568628, g: 0.62352943, b: 0.14901961, a: 1}
-    m_HighlightedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
+    m_HighlightedColor: {r: 0.75686276, g: 0.62352943, b: 0.14901961, a: 1}
     m_PressedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
-    m_SelectedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
-    m_DisabledColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 0.5019608}
+    m_SelectedColor: {r: 0.75686276, g: 0.62352943, b: 0.14901961, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1.74
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3057,7 +3057,7 @@ GameObject:
   - component: {fileID: 1940550820}
   - component: {fileID: 1940550819}
   m_Layer: 5
-  m_Name: Lumberjack_Num
+  m_Name: Test_Num
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3080,7 +3080,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 690, y: -274}
+  m_AnchoredPosition: {x: 690, y: -169}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1940550819
@@ -3188,7 +3188,7 @@ GameObject:
   - component: {fileID: 1970570131}
   - component: {fileID: 1970570130}
   m_Layer: 5
-  m_Name: UpgradePlayer_Text
+  m_Name: UpgradeTest_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3391,10 +3391,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.7568628, g: 0.62352943, b: 0.14901961, a: 1}
-    m_HighlightedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
+    m_HighlightedColor: {r: 0.75686276, g: 0.62352943, b: 0.14901961, a: 1}
     m_PressedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
-    m_SelectedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
-    m_DisabledColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 0.5019608}
+    m_SelectedColor: {r: 0.75686276, g: 0.62352943, b: 0.14901961, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1.74
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3513,7 +3513,7 @@ GameObject:
   - component: {fileID: 2125910299}
   - component: {fileID: 2125910298}
   m_Layer: 5
-  m_Name: Hire_Lumberjack
+  m_Name: Hire_Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3537,7 +3537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 581, y: -275}
+  m_AnchoredPosition: {x: 581, y: -169}
   m_SizeDelta: {x: 160, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2125910298
@@ -3561,10 +3561,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.7568628, g: 0.62352943, b: 0.14901961, a: 1}
-    m_HighlightedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
+    m_HighlightedColor: {r: 0.75686276, g: 0.62352943, b: 0.14901961, a: 1}
     m_PressedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
-    m_SelectedColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 1}
-    m_DisabledColor: {r: 0.47058827, g: 0.38823533, b: 0.09411766, a: 0.5019608}
+    m_SelectedColor: {r: 0.75686276, g: 0.62352943, b: 0.14901961, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1.74
     m_FadeDuration: 0.1
   m_SpriteState:
